@@ -62,7 +62,7 @@ def test_simpleUpload
 <h1>Not Found</h1>
 <p>The requested URL /dest/fake.php was not found on this server.</p>
 </body></html>\n"
-   @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>"/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt"})
+   @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>@textfile_path})
 
     assert_equal @URL_notFound_body, @output['body']
     #puts @output['statusString'][4].chr
@@ -74,7 +74,7 @@ def test_simpleUpload
     #2. php file exists - TDavid's Very First PHP Script
     @urlarg = "http://localhost/dest/date.php"
    
-    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>"/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt"})
+    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>@textfile_path})
     @want = "<html>
 
 <head>
@@ -93,7 +93,7 @@ def test_simpleUpload
 
     #3. Cookies.
     @urlarg = "http://localhost/dest/date.php"
-    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>"/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt", 'cookies'=>"This is the respected Cookie!"})
+    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>@textfile_path, 'cookies'=>"This is the respected Cookie!"})
 
     assert_equal @want, @output['body']
     assert_equal "O", @output['statusString'][4].chr #statusString="404 Not Found", therefore making sure (N)ot Found
@@ -101,7 +101,7 @@ def test_simpleUpload
 
     #4. progressCallback - this probably is not correct.
     @t = 1
-    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>"/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt", 'cookies'=>"This is the respected Cookie!", 'progressCallback'=> @t =Add(@t)})
+    @output = @i.simpleUpload({'url'=>@urlarg, 'file'=>@textfile_path, 'cookies'=>"This is the respected Cookie!", 'progressCallback'=> @t =Add(@t)})
 
 
 
@@ -175,7 +175,7 @@ def test_simpleUpload
   def test_crossd
     @b = @s.allocate "http://biteme.org/index.html"
     @urlarg = "http://localhost/dest/date.php"
-    #@output1 = @b.simpleUpload({'url'=> @urlarg, 'file'=> "/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt" })
+    #@output1 = @b.simpleUpload({'url'=> @urlarg, 'file'=> @textfile_path })
 
 
 
