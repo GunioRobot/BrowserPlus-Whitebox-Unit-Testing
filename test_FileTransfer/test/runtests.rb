@@ -23,7 +23,7 @@ puts pathToService
     @binfile_path = File.expand_path(File.join(curDir, "service.bin"))
     @binfile_uri = (( @binfile_path[0] == "/") ? "file://" : "file:///" ) + @binfile_path
 
-    @textfile_path = File.expand_path(File.join(curDir, "servicesUploader.txt"))
+    @textfile_path = "path:" + File.expand_path(File.join(curDir, "servicesUploader.txt"))
     @textfile_uri = (( @textfile_path[0] == "/") ? "file://" : "file:///" ) + @textfile_path
 
     @textfile_path_1 = File.expand_path(File.join(curDir) )
@@ -113,9 +113,9 @@ def test_simpleUpload
     # 1. url not found
     @urlarg = "http://localhost/dest/fake.php"
    #  @urlarg = "http://browserplus.org/misc/upload.php"
-    #@URL_notFound_body = "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">
+    #@URL_notFound_body = "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">"
     @filesarg = Hash.new
-    @filesarg['key1'] = 'path:/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader.txt'
+    @filesarg['key1'] = @textfile_path
 
     @output = "OUTPUT YO"
     @output = @i.upload({'url'=>@urlarg, 'files'=>@filesarg})
@@ -152,7 +152,7 @@ def test_simpleUpload
 
 
     #3. two files in 'files'
-    @filesarg['key2'] = 'path:/Users/ndmanvar/Desktop/test_Uploader/test/servicesUploader2.txt'
+    @filesarg['key2'] = @textfile_path
     @output = @i.upload({'url'=>@urlarg, 'files'=> @filesarg   })
 #    puts "START: "
 #    puts @output
