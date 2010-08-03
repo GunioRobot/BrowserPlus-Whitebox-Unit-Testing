@@ -39,7 +39,7 @@ class TestFileAccess < Test::Unit::TestCase
 	#puts @r
 
     @s = BrowserPlus::Service.new(pathToService)
-
+    #@s = BrowserPlus::Service.new(@r)
   end
   
   #TEARDOWN
