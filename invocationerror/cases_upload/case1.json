@@ -1,0 +1,13 @@
+{
+  "url":    "",
+  
+  "file":   "hi.html",
+  
+  "files":  {"key1":"hi.html", "key2": "hi2.html"},
+  
+  "cookies":    "Sacred cookie",
+  
+  "postvars":   "",
+  
+  "timeout":   5
+}
