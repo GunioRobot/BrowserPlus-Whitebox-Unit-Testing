@@ -1,0 +1,2 @@
+/Users/ndmanvar/Desktop/lloydH/bp-fileaccess/src/build/CMakeFiles/FileAccess.dir
+/Users/ndmanvar/Desktop/lloydH/bp-fileaccess/src/build/CMakeFiles/FileAccessExternals.dir
