@@ -1,2 +1,0 @@
-# Logfile created on Fri Aug 06 09:12:15 -0700 2010 by logger.rb/22285
-I, [2010-08-06T09:12:16.002659 #58698]  INFO -- : log this
