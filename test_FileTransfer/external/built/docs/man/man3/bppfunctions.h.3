@@ -1,0 +1,190 @@
+.TH "bppfunctions.h" 3 "13 Jul 2010" "Doxygen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bppfunctions.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <ServiceAPI/bptypes.h>\fP
+.br
+\fC#include <ServiceAPI/bpdefinition.h>\fP
+.br
+\fC#include <ServiceAPI/bpcfunctions.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBBPPFunctionTable_t\fP"
+.br
+.in -1c
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBPP_SERVICE_API_VERSION\fP   5"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef const \fBBPServiceDefinition\fP *(* \fBBPPInitializePtr\fP )(const \fBBPCFunctionTable\fP *coreFunctionTable, const \fBBPPath\fP serviceDir, const \fBBPPath\fP dependentDir, const \fBBPElement\fP *dependentParams)"
+.br
+.ti -1c
+.RI "typedef void(* \fBBPPShutdownPtr\fP )(void)"
+.br
+.ti -1c
+.RI "typedef int(* \fBBPPAllocatePtr\fP )(void **instance, const \fBBPString\fP uri, const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir, const \fBBPPath\fP tempDir, const \fBBPString\fP locale, const \fBBPString\fP userAgent, int clientPid)"
+.br
+.ti -1c
+.RI "typedef void(* \fBBPPDestroyPtr\fP )(void *instance)"
+.br
+.ti -1c
+.RI "typedef void(* \fBBPPInvokePtr\fP )(void *instance, const char *functionName, unsigned int tid, const \fBBPElement\fP *arguments)"
+.br
+.ti -1c
+.RI "typedef void(* \fBBPPCancelPtr\fP )(void *instance, unsigned int tid)"
+.br
+.ti -1c
+.RI "typedef int(* \fBBPPInstallPtr\fP )(const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir)"
+.br
+.ti -1c
+.RI "typedef int(* \fBBPPUninstallPtr\fP )(const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir)"
+.br
+.ti -1c
+.RI "typedef struct \fBBPPFunctionTable_t\fP \fBBPPFunctionTable\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBBPPFunctionTable\fP * \fBBPPGetEntryPoints\fP (void)"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define BPP_SERVICE_API_VERSION   5"
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef int(* \fBBPPAllocatePtr\fP)(void **instance, const \fBBPString\fP uri, const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir, const \fBBPPath\fP tempDir, const \fBBPString\fP locale, const \fBBPString\fP userAgent, int clientPid)"Allocate a new service instance.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinstance\fP A void pointer that will be passed back to subsequent calls to invoke and destroy. This is an output parameter that services may use to store instance-specific context. 
+.br
+\fIuri\fP a UTF8 encoded string containing a URI of the current client. This is usually the full URL to the webpage that is interacting with browserplus. In the case of a native local application interacting with browserplus it should be a URI with a method of 'bpclient' (i.e. bpclient://CLIENTIDENTIFIER'). 
+.br
+\fIserviceDir\fP is an absolute path to the directory containing the files distributed with the service. 
+.br
+\fIdataDir\fP is an absolute path to where the service should store any data that needs to persist. 
+.br
+\fItempDir\fP is an instance-specific directory that may be used for temporary data. Service is responsible for creating the directory. Service should remove the directory when the instance is deallocated. 
+.br
+\fIlocale\fP The locale of the end user to which strings, if any, should be localized. 
+.br
+\fIuserAgent\fP The client user-agent as a UTF8 encoded string. 
+.br
+\fIclientPid\fP The process ID of the client program/browser.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+zero on success, non-zero on failure 
+.RE
+.PP
+
+.SS "typedef void(* \fBBPPCancelPtr\fP)(void *instance, unsigned int tid)"Cancel a transaction previously started by calling \fBBPPInvokePtr()\fP
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinstance\fP The instance pointer returned from a BPPAllocate call. 
+.br
+\fItid\fP The transaction id of this function invocation. 
+.RE
+.PP
+
+.SS "typedef void(* \fBBPPDestroyPtr\fP)(void *instance)"Destroy a service instance allocated with BPPAllocate.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinstance\fP An instance pointer returned from a BPPAllocate call. 
+.RE
+.PP
+
+.SS "typedef struct \fBBPPFunctionTable_t\fP  \fBBPPFunctionTable\fP"
+.SS "typedef const \fBBPServiceDefinition\fP*(* \fBBPPInitializePtr\fP)(const \fBBPCFunctionTable\fP *coreFunctionTable, const \fBBPPath\fP serviceDir, const \fBBPPath\fP dependentDir, const \fBBPElement\fP *dependentParams)"***** BEGIN LICENSE BLOCK ***** The contents of this file are subject to the Mozilla Public License Version 1.1 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+.PP
+Software distributed under the License is distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License.
+.PP
+The Original Code is BrowserPlus (tm).
+.PP
+The Initial Developer of the Original Code is Yahoo!. Portions created by Yahoo! are Copyright (c) 2010 Yahoo! Inc. All rights reserved.
+.PP
+Contributor(s): ***** END LICENSE BLOCK ***** Written by Lloyd Hilaiel, on or around Fri May 18 17:06:54 MDT 2007
+.PP
+Overview:
+.PP
+Functions that must be implemented by the service are prefaced with BPP and are located in this file. Initialize the service, called once at service load time.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcoreFunctionTable\fP pointer to a structure of pointers to BPC functions that the service may call through into BPCore. 
+.br
+\fIserviceDir\fP The directory in which the service being initialized is installed. 
+.br
+\fIdependentDir\fP In the case of a provider service, the path to the dependent service being loaded. 
+.br
+\fIdependentParams\fP In the case of a provider service, arguments from the manifest.json of the dependent service.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A service definition which describes the interface of the service. This memory should not be freed until the service is shutdown. 
+.RE
+.PP
+
+.SS "typedef int(* \fBBPPInstallPtr\fP)(const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir)"A callback invoked exactly once immediately after a service is installed on disk. This is an opportunity for a service to perform any one-time setup.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserviceDir\fP is an absolute path to the directory containing the files distributed with the service. 
+.br
+\fIdataDir\fP is an absolute path to where the service should store any data that needs to persist. 
+.RE
+.PP
+
+.SS "typedef void(* \fBBPPInvokePtr\fP)(void *instance, const char *functionName, unsigned int tid, const \fBBPElement\fP *arguments)"Invoke a service method.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIinstance\fP The instance pointer returned from a BPPAllocate call. 
+.br
+\fIfunctionName\fP The name of the function being invoked 
+.br
+\fItid\fP The transaction id of this function invocation. Should be passed by the service to BPCPostResultsFuncPtr or BPCPostErrorFuncPtr 
+.br
+\fIarguments\fP The validated arguments to the function. The service is guaranteed that all defined arguments to the function from the function description structure have been checked, and that no unsupported arguments are present, nor are required arguments missing. This is always a BPTMap. 
+.RE
+.PP
+
+.SS "typedef void(* \fBBPPShutdownPtr\fP)(void)"Shutdown the service. Called once at service unload time. All allocated instances will have been deleted by the time this function is called. 
+.SS "typedef int(* \fBBPPUninstallPtr\fP)(const \fBBPPath\fP serviceDir, const \fBBPPath\fP dataDir)"A callback invoked exactly once immediately before a service is purged from disk. This is an opportunity for a service to perform any one-time cleanup.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIserviceDir\fP is an absolute path to the directory containing the files distributed with the service. 
+.br
+\fIdataDir\fP is an absolute path to where the service should store any data that needs to persist. 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "const \fBBPPFunctionTable\fP* BPPGetEntryPoints (void)"The single entry point into the plugin which attains a BPPFunctionTable containing the version. Having a single symbol which is sought in the plugin interface allows the service author to strip all other symbols. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen from the source code.
