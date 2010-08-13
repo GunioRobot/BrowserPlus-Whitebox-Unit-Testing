@@ -1,0 +1,11 @@
+--- 
+:files: 
+- - include/zlib/zconf.h
+  - e7b67b659745ac1d5e0dcfad97123ce2
+- - include/zlib/zlib.h
+  - c56799f2cd064bff61029232dce83e92
+- - lib/Debug/libzlib_s.a
+  - 64380d984cbd33612f875d8bbf43cb45
+- - lib/Release/libzlib_s.a
+  - 01f8a03fdcf05a0a5df75bee3a66e38f
+:recipe: f27c6e44f0d4439fa2eb3a20256bc997

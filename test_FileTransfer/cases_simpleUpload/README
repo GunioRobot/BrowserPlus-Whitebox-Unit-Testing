@@ -1,0 +1,11 @@
+README:
+
+To add test cases for simpleUpload, Upload, and Download: 
+1. you make a .json file for paramters
+2. and then make a folder for the case number, and add what data you want for do_POST(res, req)'s res.body (its return value for do_POST, which Does not have to be JSON formatted)
+	 in want2 you put what you want the do_POST(req, res) of the Justpost HTTP:Servelet to be.
+	in want3 you put what you want the do_POST(req, res) of HTMLpost Serevelet
+		Those are the two current "On the fly Ruby HTML Servelets used in this test.
+
+3.then make a copy of case#.rb, and remame it to the corresponding case number.
+

@@ -1,0 +1,5 @@
+#!/Users/ndmanvar/Desktop/rubyinterpreter/bp-ruby/external/dist/bin/ruby
+
+require 'rdoc/ri/driver'
+
+RDoc::RI::Driver.run ARGV
