@@ -1,9 +1,0 @@
-These are the API Level tests I did.
-
-Most of them are done, some are not.
-
-you can track my progress on these tests at:
-http://twiki.corp.yahoo.com/view/Mail/BrowserPlusAPITesting
-
-The instructions to add test cases are found in the README of the test_Xxxxx/test folder if it exists.
-or in test_Xxxxx/ if the test folder is not a subdirectory of test_Xxxxx.

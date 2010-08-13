@@ -1,3 +1,0 @@
-# Logfile created on Mon Aug 09 16:54:05 -0700 2010 by logger.rb/22285
-I, [2010-08-09T16:54:05.820021 #3731]  INFO -- : File: bpnpapi.log  testId: 1 <-- SUCCESS. 
-I, [2010-08-09T16:54:05.820217 #3731]  INFO -- : File: bpnpapi.log  testId: 2 <-- SUCCESS. 

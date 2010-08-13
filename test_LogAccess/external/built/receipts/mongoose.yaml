@@ -1,9 +1,0 @@
---- 
-:files: 
-- - include/mongoose/mongoose.h
-  - 186e89859b0cac9ee1558a5140ce8c6c
-- - lib/Debug/libmongoose_s.a
-  - 052ff2d9b817d7df72b9ee9b7aa05fb4
-- - lib/Release/libmongoose_s.a
-  - 337255fe142a1d94ea330999c1d7db62
-:recipe: d15c64a4974a2fff32d4d17dd3bfa9ed

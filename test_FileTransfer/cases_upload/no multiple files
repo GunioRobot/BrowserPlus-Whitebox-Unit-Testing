@@ -1,2 +1,0 @@
-Currently this upload() test only supports one file as an argument of the 'file' parameter.
-Although, during testing hi2.html getts attatched as 'file'[key2].

@@ -1,9 +1,0 @@
---- 
-:files: 
-- - include/bp-file/bpfile.h
-  - a56fe755c184851ccc016b0d6a7d2edc
-- - lib/Debug/libbpfile_s.a
-  - 6b593758cb81aa667cc67d6b48b67f83
-- - lib/Release/libbpfile_s.a
-  - 7661c6a7a1e19e3b6af4968263c70bdb
-:recipe: 0ce23e36241cfadc4ff7d339980eba4a

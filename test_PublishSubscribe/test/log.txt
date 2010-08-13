@@ -1,1 +1,0 @@
-# Logfile created on Wed Aug 11 16:33:43 -0700 2010 by logger.rb/22285
