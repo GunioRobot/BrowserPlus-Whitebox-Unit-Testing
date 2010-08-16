@@ -1,0 +1,10 @@
+# Logfile created on Mon Aug 09 15:30:16 -0700 2010 by logger.rb/22285
+I, [2010-08-09T15:30:16.356405 #2439]  INFO -- : Test: test_tar  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.357008 #2439]  INFO -- : Test: test_tar  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.357595 #2439]  INFO -- : Test: test_tar  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.435354 #2439]  INFO -- : Test: test_zip  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.435752 #2439]  INFO -- : Test: test_zip  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.436054 #2439]  INFO -- : Test: test_zip  testId: 1 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.440929 #2439]  INFO -- : Test: test_zip  testId: 2 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.441248 #2439]  INFO -- : Test: test_zip  testId: 2 <-- SUCCESS. 
+I, [2010-08-09T15:30:16.441537 #2439]  INFO -- : Test: test_zip  testId: 2 <-- SUCCESS. 

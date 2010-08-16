@@ -1,0 +1,10 @@
+{
+  "type": "standalone",
+  "CoreletLibrary": "@ServiceLibrary@",
+    "strings": { 
+      "en": { 
+          "title": "Archiver Service", 
+          "summary": "Lets you archive and optionally compress files and directories."
+      }
+    }
+  }
