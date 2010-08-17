@@ -1,0 +1,2 @@
+/Users/ndmanvar/Desktop/rad/bp-jsonrequest/src/build/CMakeFiles/JSONRequest.dir
+/Users/ndmanvar/Desktop/rad/bp-jsonrequest/src/build/CMakeFiles/JSONRequestExternals.dir

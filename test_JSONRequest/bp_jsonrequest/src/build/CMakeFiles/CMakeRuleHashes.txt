@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+1b172f79e9d76587875cdd7936ed43dc CMakeFiles/JSONRequest
+c9347a07fedca9180e2f5155588fca24 CMakeFiles/JSONRequestExternals
+93db98fed9673fe54c913cb13d71b7f8 JSONRequest/JSONRequest.rb
+fa7d6fe4bbfb139f205c77f576a222e0 JSONRequest/json/json.rb
+e0da8dd34a9e0d551d922b8779c46ee8 JSONRequest/json/json/common.rb
+5467e26628a24d53a489718990cf4bef JSONRequest/json/json/pure.rb
+49beb73a58b1ca40acef2db08938b4d9 JSONRequest/json/json/pure/generator.rb
+009b93d743325eb246d4e430ed00c837 JSONRequest/json/json/pure/parser.rb
+1d7d860a9a8a2946fb57754a4024fb0c JSONRequest/json/json/version.rb

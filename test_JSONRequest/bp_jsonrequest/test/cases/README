@@ -1,0 +1,18 @@
+README:
+
+To add test cases for JSONRequest.
+
+Inside of the tests folder:
+
+1. make a copy of case1.rb and rename to whatever you want, make sure its still .rb though (in this readme ill use example.rb as an example).
+
+2. make a json file, i.e. example.json, and in it you can specify what you want as the parameters to @s.get() and @s.post()
+
+3. make a folder of the same name.
+	-doGET.json should contain a map of what you want to returned from 	@s.get()
+	-doPOST.json should contain a map of what you want to returned from 	@s.post()
+
+4. add your test case as a new testcase in test_JsonRequest.rb as a new definition. #look at code and previous examples
+
+5. ruby test_JsonRequest.rb
+	results can be found in log.txt

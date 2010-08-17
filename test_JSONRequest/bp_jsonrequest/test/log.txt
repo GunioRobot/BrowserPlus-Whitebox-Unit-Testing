@@ -1,0 +1,9 @@
+# Logfile created on Wed Aug 11 13:52:21 -0700 2010 by logger.rb/22285
+I, [2010-08-11T13:52:22.072666 #17707]  INFO -- : File: case1  testId: 1 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.072792 #17707]  INFO -- : File: case1  testId: 1 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.122059 #17707]  INFO -- : File: case1  testId: 2 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.122163 #17707]  INFO -- : File: case1  testId: 2 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.174045 #17707]  INFO -- : File: case1  testId: 3 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.224981 #17707]  INFO -- : File: case1  testId: 4 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.275223 #17707]  INFO -- : File: case1, OnlyPOST runtime  testId: 5 <-- SUCCESS. 
+I, [2010-08-11T13:52:22.276432 #17707]  INFO -- : File: case1, OnlyPOST runtime  testId: 6 <-- SUCCESS. 

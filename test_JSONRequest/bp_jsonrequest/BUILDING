@@ -1,0 +1,8 @@
+XXX: Here's roughly how to get it building today
+
+1. git clone git://github.com/browserplus/bp-jsonrequest
+2. cd bp-jsonrequest
+3. mkdir service/build
+4. cd service/build
+5. cmake ..  (cmake -G "Visual Studio 9 2008" .. on Windows)
+6. make  (devenv JSONRequestRuby.sln on Windows)

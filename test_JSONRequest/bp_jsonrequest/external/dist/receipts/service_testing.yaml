@@ -1,0 +1,19 @@
+--- 
+:files: 
+- - share/service_testing/bp_service_runner.rb
+  - 639749ead78294f7ecae75ce91fb2c54
+- - share/service_testing/cppunit_runner.rb
+  - d6a0f40369400b55f0aa2e94911a515d
+- - share/service_testing/json/json.rb
+  - 863af94954356e9d1e5116c57bff8a79
+- - share/service_testing/json/json/common.rb
+  - 1cce0442fd74ba1485129a017391454b
+- - share/service_testing/json/json/pure.rb
+  - b8ad16c79898712ff58c84f710b32bdd
+- - share/service_testing/json/json/pure/generator.rb
+  - 6b6ebd7b2b8784d65806c23f39884666
+- - share/service_testing/json/json/pure/parser.rb
+  - 6c7565e2b66eb29dd9ff91a147f07918
+- - share/service_testing/json/json/version.rb
+  - be3dae34609e39b282367f7a8baa6ab9
+:recipe: cdfd0f93ef7d7d251ab9518c6f7480c7
