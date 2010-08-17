@@ -1,0 +1,2 @@
+/Users/ndmanvar/newruby/bp-ruby/src/build/CMakeFiles/BuildExternals.dir
+/Users/ndmanvar/newruby/bp-ruby/src/build/CMakeFiles/RubyInterpreter.dir
