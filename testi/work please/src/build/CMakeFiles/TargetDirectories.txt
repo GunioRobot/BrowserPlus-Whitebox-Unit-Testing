@@ -1,2 +1,0 @@
-/Users/ndmanvar/Desktop/fatest/bp-fileaccess/src/build/CMakeFiles/BuildExternals.dir
-/Users/ndmanvar/Desktop/fatest/bp-fileaccess/src/build/CMakeFiles/FileAccess.dir

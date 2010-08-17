@@ -1,6 +1,0 @@
-README:
-
-Test cases are found in cases_FUNCTIONNAME. (i.e. testcases for read are found in cases_read )
-Each test is given a testID which is found in the testcode in the comment before that test.
-
-You can add as many test cases as you want, just follow the format of the previously created cases.
