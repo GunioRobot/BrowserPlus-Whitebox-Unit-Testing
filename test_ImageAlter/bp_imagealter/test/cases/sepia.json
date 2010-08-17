@@ -1,0 +1,5 @@
+{
+  "file":    "kat.jpg",
+  "format":  "jpeg",
+  "actions": [ "sepia"]
+}
